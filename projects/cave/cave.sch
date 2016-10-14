@@ -9951,7 +9951,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="SMW5-1" library="SMW" deviceset="SMW530RJT" device="" value="30"/>
 <part name="SMW5-2" library="SMW" deviceset="SMW530RJT" device="" value="30"/>
 <part name="SPM6530-1" library="SPM_inductor" deviceset="SPM6530" device="" value="1.5uH"/>
-<part name="X2" library="con-subd" deviceset="F09" device="H"/>
+<part name="X2" library="con-subd" deviceset="F09" device="V"/>
 <part name="X3" library="con-subd" deviceset="F25" device="V"/>
 </parts>
 <sheets>
