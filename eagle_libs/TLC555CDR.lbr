@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -62,14 +62,14 @@
 <library>
 <packages>
 <package name="SOIC127P600X175-8N">
-<smd name="1" x="-2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="2" x="-2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="3" x="-2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="4" x="-2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="5" x="2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="6" x="2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="7" x="2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="8" x="2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="1-GND" x="-2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="2-TRIG" x="-2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="3-OUT" x="-2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="4-RESET" x="-2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="5-CONT" x="2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="6-THR" x="2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="7-DIS" x="2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="8-VDD" x="2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
 <wire x1="-2.0066" y1="1.651" x2="-2.0066" y2="2.159" width="0" layer="51"/>
 <wire x1="-2.0066" y1="2.159" x2="-3.0988" y2="2.159" width="0" layer="51"/>
 <wire x1="-3.0988" y1="2.159" x2="-3.0988" y2="1.651" width="0" layer="51"/>
@@ -147,14 +147,14 @@
 <devices>
 <device name="" package="SOIC127P600X175-8N">
 <connects>
-<connect gate="A" pin="CONT" pad="5"/>
-<connect gate="A" pin="DISCH" pad="7"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="OUT" pad="3"/>
-<connect gate="A" pin="RESET" pad="4"/>
-<connect gate="A" pin="THRES" pad="6"/>
-<connect gate="A" pin="TRIG" pad="2"/>
-<connect gate="A" pin="VDD" pad="8"/>
+<connect gate="A" pin="CONT" pad="5-CONT"/>
+<connect gate="A" pin="DISCH" pad="7-DIS"/>
+<connect gate="A" pin="GND" pad="1-GND"/>
+<connect gate="A" pin="OUT" pad="3-OUT"/>
+<connect gate="A" pin="RESET" pad="4-RESET"/>
+<connect gate="A" pin="THRES" pad="6-THR"/>
+<connect gate="A" pin="TRIG" pad="2-TRIG"/>
+<connect gate="A" pin="VDD" pad="8-VDD"/>
 </connects>
 <technologies>
 <technology name="">
