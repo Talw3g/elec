@@ -9848,13 +9848,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="51k"/>
-<part name="UART_RX_5V" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="T4" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2369LT1"/>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="UART_TX_5V" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="SCREEN_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="SCREEN_5V" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="HEAT_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
@@ -11469,13 +11465,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="U1" gate="A" x="48.26" y="149.86" rot="MR90"/>
 <instance part="R20" gate="G$1" x="58.42" y="33.02" rot="R90"/>
 <instance part="R21" gate="G$1" x="58.42" y="17.78" rot="R90"/>
-<instance part="UART_RX_5V" gate="G$1" x="111.76" y="38.1" rot="R180"/>
 <instance part="GND10" gate="1" x="58.42" y="7.62"/>
 <instance part="T4" gate="G$1" x="55.88" y="66.04"/>
 <instance part="R22" gate="G$1" x="58.42" y="53.34" rot="R270"/>
-<instance part="UART_TX_5V" gate="G$1" x="111.76" y="58.42" rot="R180"/>
-<instance part="SCREEN_GND" gate="G$1" x="111.76" y="12.7" rot="R180"/>
-<instance part="SCREEN_5V" gate="G$1" x="111.76" y="73.66" rot="R180"/>
 <instance part="GND11" gate="1" x="58.42" y="43.18"/>
 <instance part="R23" gate="G$1" x="45.72" y="66.04"/>
 <instance part="GND16" gate="1" x="210.82" y="175.26"/>
@@ -11511,7 +11503,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="58.42" y1="12.7" x2="109.22" y2="12.7" width="0.1524" layer="91"/>
 <junction x="58.42" y="12.7"/>
-<pinref part="SCREEN_GND" gate="G$1" pin="P"/>
+<label x="109.22" y="12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
@@ -11612,21 +11604,21 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="U1" gate="A" pin="D"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="UART_RX_5V" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="UART_RX_5V" gate="G$1" pin="P"/>
+<label x="109.22" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="UART_TX_5V" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="T4" gate="G$1" pin="E"/>
 <wire x1="58.42" y1="58.42" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="UART_TX_5V" gate="G$1" pin="P"/>
 <wire x1="109.22" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <junction x="58.42" y="58.42"/>
+<label x="109.22" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -11674,9 +11666,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="T4" gate="G$1" pin="C"/>
 <wire x1="58.42" y1="71.12" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="SCREEN_5V" gate="G$1" pin="P"/>
 <pinref part="SUPPLY14" gate="+5V" pin="+5V"/>
 <junction x="58.42" y="73.66"/>
+<label x="109.22" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+12V" class="0">
