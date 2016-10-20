@@ -9801,9 +9801,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="D3" library="semicon-smd-ipc" deviceset="D-" device="A1-C3" value="SBR160S23-7"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="37.4k"/>
-<part name="SERVO_5V" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="SERVO_PWM" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="SERVO_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="SERVO_5V" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="SERVO_PWM" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="SERVO_GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="U1" library="transistor-power" deviceset="IRLML6344TRPBF" device=""/>
@@ -9823,10 +9823,10 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="DHT-EXT_SIG" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="DHT-EXT_3V3" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="4.7k"/>
-<part name="OPTSEN-EMIT_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="OPTSEN-EMIT_5V" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="OPTSEN-REC_STATE" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="OPTSEN-REC_3V3" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="OPTSEN-EMIT_GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="OPTSEN-EMIT_5V" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="OPTSEN-REC_STATE" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="OPTSEN-REC_3V3" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -9835,9 +9835,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="LIGHTSEN_5V" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="LIGHTSEN_SIG" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="LIGHTSEN_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="LIGHTSEN_5V" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="LIGHTSEN_SIG" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="LIGHTSEN_GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2369LT1"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
@@ -9853,7 +9853,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="HEAT_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="HEAT_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0603" value="250"/>
 <part name="U4" library="transistor-power" deviceset="IRLML6344TRPBF" device=""/>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
@@ -9868,8 +9868,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R37" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R38" library="rcl" deviceset="R-EU_" device="R0603" value="250"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="BUZZER+" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="BUZZER-" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="BUZZER+" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="BUZZER-" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="U10" library="transistor-power" deviceset="IRLML6344TRPBF" device=""/>
 <part name="R39" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
@@ -9878,7 +9878,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="DEHUM_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="DEHUM_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="R40" library="rcl" deviceset="R-EU_" device="R0603" value="250"/>
 <part name="U11" library="transistor-power" deviceset="IRLML6344TRPBF" device=""/>
 <part name="R41" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
@@ -9887,8 +9887,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R43" library="rcl" deviceset="R-EU_" device="R0603" value="4.7k"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="10uF/25V"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="FAN_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="FAN_SWITCH+" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="FAN_SWITCH_GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="FAN_SWITCH+" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="R28" library="rcl" deviceset="R-EU_" device="R0603" value="250"/>
 <part name="U6" library="transistor-power" deviceset="IRLML6344TRPBF" device=""/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
@@ -9898,10 +9898,10 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="F-12V" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="F-5V" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
-<part name="HEAT_SWITCH+" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="HEAT_SWITCH+" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="H-12V" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="H-5V" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
-<part name="DEHUM_SWITCH+" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="DEHUM_SWITCH+" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="D-12V" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="D-5V" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="POWER+" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
