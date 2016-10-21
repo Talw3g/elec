@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -122,11 +122,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="72" width="0" layer="20"/>
-<wire x1="100" y1="72" x2="0" y2="72" width="0" layer="20"/>
-<wire x1="0" y1="72" x2="0" y2="0" width="0" layer="20"/>
-<circle x="2.2352" y="2.3622" radius="1.1" width="0.254" layer="20"/>
+<wire x1="0" y1="69" x2="0" y2="3" width="0" layer="20"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="0" x2="97" y2="0" width="0" layer="20"/>
+<wire x1="97" y1="0" x2="100" y2="3" width="0" layer="20" curve="90"/>
+<wire x1="100" y1="3" x2="100" y2="69" width="0" layer="20"/>
+<wire x1="100" y1="69" x2="97" y2="72" width="0" layer="20" curve="90"/>
+<wire x1="97" y1="72" x2="3" y2="72" width="0" layer="20"/>
+<wire x1="3" y1="72" x2="0" y2="69" width="0" layer="20" curve="90"/>
 </plain>
 <libraries>
 <library name="wirepad">
@@ -1656,7 +1659,6 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <via x="43.688" y="50.546" extent="1-16" drill="0.25"/>
 <via x="58.42" y="51.308" extent="1-16" drill="0.25"/>
 <via x="19.812" y="61.468" extent="1-16" drill="0.25"/>
-<via x="7.874" y="64.77" extent="1-16" drill="0.25"/>
 <via x="12.7" y="47.244" extent="1-16" drill="0.25"/>
 <via x="21.59" y="45.466" extent="1-16" drill="0.25"/>
 <via x="8.636" y="24.638" extent="1-16" drill="0.25"/>
@@ -2282,12 +2284,10 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <wire x1="10.2616" y1="50.4698" x2="11.176" y2="51.3842" width="0.4064" layer="16"/>
 <wire x1="11.176" y1="51.3842" x2="14.9352" y2="51.3842" width="0.4064" layer="16"/>
 <wire x1="14.9352" y1="51.3842" x2="15.7734" y2="52.2224" width="0.4064" layer="16"/>
-<wire x1="15.7734" y1="52.2224" x2="15.7734" y2="58.7248" width="0.4064" layer="16"/>
-<wire x1="15.7734" y1="58.7248" x2="14.986" y2="59.5122" width="0.4064" layer="16"/>
-<wire x1="14.986" y1="59.5122" x2="10.9982" y2="59.5122" width="0.4064" layer="16"/>
-<wire x1="10.9982" y1="59.5122" x2="10.3124" y2="60.198" width="0.4064" layer="16"/>
-<wire x1="10.3124" y1="60.198" x2="10.3124" y2="68.1702" width="0.4064" layer="16"/>
-<wire x1="10.3124" y1="68.1702" x2="9.7366" y2="68.746" width="0.4064" layer="16"/>
+<wire x1="15.7734" y1="52.2224" x2="15.7734" y2="66.0146" width="0.4064" layer="16"/>
+<wire x1="15.7734" y1="66.0146" x2="14.986" y2="66.802" width="0.4064" layer="16"/>
+<wire x1="14.986" y1="66.802" x2="11.6806" y2="66.802" width="0.4064" layer="16"/>
+<wire x1="11.6806" y1="66.802" x2="9.7366" y2="68.746" width="0.4064" layer="16"/>
 </signal>
 <signal name="I2C_SDA">
 <contactref element="SV1" pad="3"/>
@@ -3034,6 +3034,18 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <signal name="N$33">
 </signal>
 <signal name="N$39">
+</signal>
+<signal name="N$8">
+<via x="3" y="3" extent="1-16" drill="2.1" diameter="4"/>
+</signal>
+<signal name="N$18">
+<via x="97" y="3" extent="1-16" drill="2.1" diameter="4"/>
+</signal>
+<signal name="N$19">
+<via x="97" y="69" extent="1-16" drill="2.1" diameter="4"/>
+</signal>
+<signal name="N$29">
+<via x="9" y="64.5" extent="1-16" drill="2.1" diameter="4"/>
 </signal>
 </signals>
 <errors>
