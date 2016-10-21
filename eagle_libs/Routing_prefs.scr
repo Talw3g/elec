@@ -1,9 +1,63 @@
+ASSIGN C+M MOVE;
+ASSIGN C+Z UNDO;
+ASSIGN C+Y REDO;
+ASSIGN CS+C COPY;
+ASSIGN CS+A ADD;
+ASSIGN C+G GROUP;
+ASSIGN C+D DELETE;
+ASSIGN C+W WIRE;
+ASSIGN C+I INFO;
+ASSIGN C+T TEXT;
+ASSIGN CS+N NAME;
+ASSIGN CS+P POLYGON;
+ASSIGN C+F 'RUN find.ulp';
+
 BRD:
-ASSIGN C+D 'DRC;';
-ASSIGN F1 DISPLAY Top -Bottom;
-ASSIGN F2 DISPLAY -Top Bottom;
-ASSIGN F3 DISPLAY Top Bottom;
+ASSIGN F2 DISPLAY None Top tOrigins tPlace Dimension Pad Via Unrouted
+ASSIGN F3 DISPLAY None Bottom bOrigins bPlace Dimension Pad Via Unrouted
+ASSIGN F4 DISPLAY None Top Bottom tDocu bDocu tPlace bPlace tOrigin bOrigin Dimension Pad Via Unrouted Measures
+ASSIGN F5 DISPLAY None Route2 Route14 Dimension Via Unrouted Pad
+ASSIGN F6 DISPLAY None Route15 Route3 Dimension Via Unrouted Pad
+ASSIGN F7 DISPLAY None Route2 Route3 Route14 Route15 Dimension Via Unrouted Pad
+ASSIGN F8 DISPLAY None Route2 Route3 Route14 Route15 Top Bottom Dimension Via Unrouted Pad
+ASSIGN F9 DISPLAY None Dimension Pad Via Top tPlace tNames tDocu
+ASSIGN F10 DISPLAY None Dimension Pad Via Bottom bPlace bNames bDocu
+ASSIGN C+E ERRORS;
+ASSIGN CS+D 'DRC;';  # Executes DRC without opening DRC dialog. For dialog sk
+#ASSIGN CS+D DRC;    # Opens DRC dialog.
+ASSIGN CS+V VALUE;
+ASSIGN C+R ROUTE;
+ASSIGN CS+R RIPUP;
+ASSIGN C+Q RATSNEST;
+ASSIGN C+H HOLE;
+ASSIGN CS+S SMASH;
+ASSIGN A+S SIGNAL;
 SET WIRE_BEND @ 1 3;
 CHANGE DRILL 0.25mm;
 CHANGE SHAPE ROUND;
 CHANGE WIDTH 10mil;
+
+SCH:
+ASSIGN C+E ERRORS;
+ASSIGN CS+E ERC;
+ASSIGN CS+I INVOKE;
+ASSIGN CS+V VALUE;
+ASSIGN CS+S SMASH;
+ASSIGN A+N NET;
+
+
+LBR:
+ASSIGN C+E EDIT;
+
+DEV:
+ASSIGN A+C CONNECT;
+ASSIGN A+P PACKAGE;
+
+SYM:
+ASSIGN A+P PIN;
+
+
+PAC:
+ASSIGN C+H HOLE;
+ASSIGN A+P PAD;
+ASSIGN A+S SMD;
