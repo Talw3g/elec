@@ -7576,14 +7576,14 @@ unfilled</description>
 <library name="TLC555CDR">
 <packages>
 <package name="SOIC127P600X175-8N">
-<smd name="1" x="-2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="2" x="-2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="3" x="-2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="4" x="-2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="5" x="2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="6" x="2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="7" x="2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
-<smd name="8" x="2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="1-GND" x="-2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="2-TRIG" x="-2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="3-OUT" x="-2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="4-RESET" x="-2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="5-CONT" x="2.4638" y="-1.905" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="6-THR" x="2.4638" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="7-DIS" x="2.4638" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
+<smd name="8-VDD" x="2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
 <wire x1="-2.0066" y1="1.651" x2="-2.0066" y2="2.159" width="0" layer="51"/>
 <wire x1="-2.0066" y1="2.159" x2="-3.0988" y2="2.159" width="0" layer="51"/>
 <wire x1="-3.0988" y1="2.159" x2="-3.0988" y2="1.651" width="0" layer="51"/>
@@ -7661,14 +7661,14 @@ unfilled</description>
 <devices>
 <device name="" package="SOIC127P600X175-8N">
 <connects>
-<connect gate="A" pin="CONT" pad="5"/>
-<connect gate="A" pin="DISCH" pad="7"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="OUT" pad="3"/>
-<connect gate="A" pin="RESET" pad="4"/>
-<connect gate="A" pin="THRES" pad="6"/>
-<connect gate="A" pin="TRIG" pad="2"/>
-<connect gate="A" pin="VDD" pad="8"/>
+<connect gate="A" pin="CONT" pad="5-CONT"/>
+<connect gate="A" pin="DISCH" pad="7-DIS"/>
+<connect gate="A" pin="GND" pad="1-GND"/>
+<connect gate="A" pin="OUT" pad="3-OUT"/>
+<connect gate="A" pin="RESET" pad="4-RESET"/>
+<connect gate="A" pin="THRES" pad="6-THR"/>
+<connect gate="A" pin="TRIG" pad="2-TRIG"/>
+<connect gate="A" pin="VDD" pad="8-VDD"/>
 </connects>
 <technologies>
 <technology name="">
@@ -8624,8 +8624,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
 <wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
 <wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
 <pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
@@ -9216,9 +9216,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VIN" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="GND_1" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+<pin name="GND@2" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
 <pin name="VOUT" x="-15.24" y="2.54" length="middle" direction="out"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
@@ -9234,8 +9234,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <devices>
 <device name="" package="SOT150P400X160-4N">
 <connects>
-<connect gate="A" pin="GND" pad="2"/>
-<connect gate="A" pin="GND_1" pad="4"/>
+<connect gate="A" pin="GND@1" pad="2"/>
+<connect gate="A" pin="GND@2" pad="4"/>
 <connect gate="A" pin="VIN" pad="3"/>
 <connect gate="A" pin="VOUT" pad="1"/>
 </connects>
@@ -10497,13 +10497,13 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="139.7" y1="-20.32" x2="139.7" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="-25.4" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="121.92" y="-25.4"/>
-<pinref part="T2" gate="A" pin="GND"/>
+<pinref part="T2" gate="A" pin="GND@1"/>
 <wire x1="167.64" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-12.7" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-12.7" x2="154.94" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-25.4" x2="139.7" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="139.7" y="-25.4"/>
-<pinref part="T2" gate="A" pin="GND_1"/>
+<pinref part="T2" gate="A" pin="GND@2"/>
 <wire x1="167.64" y1="-15.24" x2="162.56" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-15.24" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="162.56" y="-12.7"/>
@@ -11679,7 +11679,21 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,243.935,91.44,X1,,,,,"/>
+<approved hash="104,2,104.14,15.24,U2,VDD,VCOND,,,"/>
+<approved hash="106,1,157.48,50.8,EEPROM_SC,,,,,"/>
+<approved hash="106,1,142.24,50.8,EEPROM_SD,,,,,"/>
+<approved hash="113,1,149.86,58.2253,SV1,,,,,"/>
+<approved hash="113,2,145.076,-1.91347,T1,,,,,"/>
+<approved hash="113,2,182.88,-9.03817,T2,,,,,"/>
+<approved hash="113,2,128.913,7.91633,T3,,,,,"/>
+<approved hash="113,5,52.7135,66.3363,T4,,,,,"/>
+<approved hash="113,2,139.596,21.486,FRAME1,,,,,"/>
+<approved hash="113,3,88.796,84.986,FRAME2,,,,,"/>
+<approved hash="113,1,131.976,13.866,FRAME3,,,,,"/>
+<approved hash="113,4,88.796,69.746,FRAME4,,,,,"/>
+<approved hash="113,5,137.056,95.146,FRAME5,,,,,"/>
+<approved hash="113,1,233.68,9.04812,X2,,,,,"/>
+<approved hash="113,1,233.68,64.9281,X3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
