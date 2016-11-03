@@ -7110,6 +7110,7 @@ unfilled</description>
 <wire x1="0.3048" y1="1.524" x2="-0.2794" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-0.7112" y1="0.3302" x2="-0.7112" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.524" x2="-0.1016" y2="1.2446" width="0.1524" layer="21" curve="-110"/>
+<text x="-1.9304" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.7112" y1="-1.524" x2="0.7112" y2="-1.524" width="0" layer="51"/>
 <wire x1="0.7112" y1="-1.524" x2="0.7112" y2="-0.254" width="0" layer="51"/>
 <wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
@@ -7132,6 +7133,7 @@ unfilled</description>
 <wire x1="1.3208" y1="-0.254" x2="1.3208" y2="0.254" width="0" layer="51"/>
 <wire x1="1.3208" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0" layer="51" curve="-180"/>
+<text x="-1.9304" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -8843,9 +8845,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VIN" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="GND_1" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+<pin name="GND@2" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
 <pin name="VOUT" x="-15.24" y="2.54" length="middle" direction="out"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
@@ -8861,8 +8863,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <devices>
 <device name="" package="SOT150P400X160-4N">
 <connects>
-<connect gate="A" pin="GND" pad="2"/>
-<connect gate="A" pin="GND_1" pad="4"/>
+<connect gate="A" pin="GND@1" pad="2"/>
+<connect gate="A" pin="GND@2" pad="4"/>
 <connect gate="A" pin="VIN" pad="3"/>
 <connect gate="A" pin="VOUT" pad="1"/>
 </connects>
@@ -9334,8 +9336,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="-6.5" y1="-4" x2="-6.5" y2="4" width="0.127" layer="21"/>
 <rectangle x1="-7" y1="-1" x2="-4.5" y2="1" layer="21"/>
 <rectangle x1="4.5" y1="-1" x2="7" y2="1" layer="21"/>
-<text x="-3" y="4.5" size="1.27" layer="21">&gt;NAME</text>
-<text x="-3" y="-6" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-3.81" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -10500,13 +10502,13 @@ W = angled&lt;p&gt;
 <wire x1="139.7" y1="-20.32" x2="139.7" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="-25.4" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="121.92" y="-25.4"/>
-<pinref part="T2" gate="A" pin="GND"/>
+<pinref part="T2" gate="A" pin="GND@1"/>
 <wire x1="167.64" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-12.7" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-12.7" x2="154.94" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-25.4" x2="139.7" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="139.7" y="-25.4"/>
-<pinref part="T2" gate="A" pin="GND_1"/>
+<pinref part="T2" gate="A" pin="GND@2"/>
 <wire x1="167.64" y1="-15.24" x2="162.56" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-15.24" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="162.56" y="-12.7"/>
