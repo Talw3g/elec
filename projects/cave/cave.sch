@@ -9042,20 +9042,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <library name="TPS54625">
 <packages>
 <package name="HTSSOP-14">
-<smd name="P$1" x="-1.95" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$2" x="-1.3" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$3" x="-0.65" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$4" x="0" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$5" x="0.65" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$6" x="1.3" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$7" x="1.95" y="-2.5" dx="1.27" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$8" x="1.95" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
-<smd name="P$9" x="1.3" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
-<smd name="P$10" x="0.65" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
-<smd name="P$11" x="0" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
-<smd name="P$12" x="-0.65" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
-<smd name="P$13" x="-1.3" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
-<smd name="P$14" x="-1.95" y="2.5" dx="1.27" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$1" x="-1.95" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$2" x="-1.3" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$3" x="-0.65" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$4" x="0" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$5" x="0.65" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$6" x="1.3" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$7" x="1.95" y="-2.66" dx="1.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="P$8" x="1.95" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$9" x="1.3" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$10" x="0.65" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$11" x="0" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$12" x="-0.65" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$13" x="-1.3" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
+<smd name="P$14" x="-1.95" y="2.66" dx="1.6" dy="0.35" layer="1" rot="R270"/>
 <wire x1="-2.5" y1="1.5" x2="2.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="1.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-1.5" x2="-2.5" y2="-1.5" width="0.127" layer="21"/>
