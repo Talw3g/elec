@@ -20,7 +20,7 @@ ASSIGN F5 DISPLAY None Route2 Route14 Dimension Via Unrouted Pad
 ASSIGN F6 DISPLAY None Route15 Route3 Dimension Via Unrouted Pad
 ASSIGN F7 DISPLAY None Route2 Route3 Route14 Route15 Dimension Via Unrouted Pad
 ASSIGN F8 DISPLAY None Route2 Route3 Route14 Route15 Top Bottom Dimension Via Unrouted Pad
-ASSIGN F9 DISPLAY None Dimension Pad Via Top tPlace tNames tDocu
+ASSIGN F9 DISPLAY None Dimension Pad Via Top tPlace tNames tDocu _tsilk
 ASSIGN F10 DISPLAY None Dimension Pad Via Bottom bPlace bNames bDocu
 ASSIGN C+E ERRORS;
 ASSIGN CS+D 'DRC;';  # Executes DRC without opening DRC dialog. For dialog sk
@@ -33,7 +33,7 @@ ASSIGN C+H HOLE;
 ASSIGN CS+S SMASH;
 ASSIGN A+S SIGNAL;
 SET WIRE_BEND @ 1 3;
-CHANGE DRILL 0.25mm;
+CHANGE DRILL 12mil;
 CHANGE SHAPE ROUND;
 CHANGE WIDTH 10mil;
 
