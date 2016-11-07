@@ -9952,6 +9952,9 @@ W = angled&lt;p&gt;
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="4.7k"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10uF/25V"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="D5" library="semicon-smd-ipc" deviceset="D-" device="A1-C3" value="SBR160S23-7"/>
+<part name="D6" library="semicon-smd-ipc" deviceset="D-" device="A1-C3" value="SBR160S23-7"/>
+<part name="D7" library="semicon-smd-ipc" deviceset="D-" device="A1-C3" value="SBR160S23-7"/>
 </parts>
 <sheets>
 <sheet>
@@ -10911,9 +10914,9 @@ W = angled&lt;p&gt;
 <sheet>
 <description>Switches</description>
 <plain>
-<text x="10.16" y="147.32" size="3.81" layer="97" rot="MR0">Heater</text>
-<text x="142.24" y="160.02" size="3.81" layer="97">Dehumidifier</text>
-<text x="15.24" y="45.72" size="3.81" layer="97">Fan</text>
+<text x="0" y="147.32" size="3.81" layer="97" rot="MR0">Heater</text>
+<text x="119.38" y="160.02" size="3.81" layer="97">Dehumidifier</text>
+<text x="-5.08" y="58.42" size="3.81" layer="97">Fan</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-50.8" y="-22.86"/>
@@ -10937,7 +10940,7 @@ W = angled&lt;p&gt;
 <instance part="C1" gate="G$1" x="142.24" y="109.22" rot="MR0"/>
 <instance part="GND12" gate="1" x="149.86" y="99.06" rot="MR0"/>
 <instance part="FAN_SWITCH_GND" gate="G$1" x="58.42" y="63.5" rot="MR270"/>
-<instance part="FAN_SWITCH+" gate="G$1" x="40.64" y="27.94" rot="MR90"/>
+<instance part="FAN_SWITCH+" gate="G$1" x="20.32" y="40.64" rot="MR90"/>
 <instance part="R28" gate="G$1" x="68.58" y="43.18" rot="MR90"/>
 <instance part="U6" gate="A" x="58.42" y="12.7" rot="MR90"/>
 <instance part="R29" gate="G$1" x="48.26" y="2.54" rot="MR270"/>
@@ -10945,20 +10948,23 @@ W = angled&lt;p&gt;
 <instance part="R31" gate="G$1" x="5.08" y="10.16" rot="MR0"/>
 <instance part="C8" gate="G$1" x="12.7" y="2.54" rot="MR0"/>
 <instance part="GND13" gate="1" x="20.32" y="-7.62" rot="MR0"/>
-<instance part="F-12V" gate="G$1" x="35.56" y="55.88" rot="MR270"/>
-<instance part="F-5V" gate="G$1" x="45.72" y="55.88" rot="MR270"/>
-<instance part="HEAT_SWITCH+" gate="G$1" x="40.64" y="139.7" rot="MR90"/>
-<instance part="H-12V" gate="G$1" x="35.56" y="167.64" rot="MR270"/>
-<instance part="H-5V" gate="G$1" x="45.72" y="167.64" rot="MR270"/>
-<instance part="DEHUM_SWITCH+" gate="G$1" x="187.96" y="139.7" rot="MR90"/>
-<instance part="D-12V" gate="G$1" x="182.88" y="167.64" rot="MR270"/>
-<instance part="D-5V" gate="G$1" x="193.04" y="167.64" rot="MR270"/>
-<instance part="SUPPLY5" gate="+5V" x="45.72" y="177.8"/>
-<instance part="SUPPLY6" gate="+12V" x="35.56" y="177.8"/>
-<instance part="SUPPLY7" gate="+5V" x="193.04" y="177.8"/>
-<instance part="SUPPLY8" gate="+12V" x="182.88" y="177.8"/>
-<instance part="SUPPLY9" gate="+5V" x="45.72" y="66.04"/>
-<instance part="SUPPLY10" gate="+12V" x="35.56" y="66.04"/>
+<instance part="F-12V" gate="G$1" x="15.24" y="68.58" rot="MR270"/>
+<instance part="F-5V" gate="G$1" x="25.4" y="68.58" rot="MR270"/>
+<instance part="HEAT_SWITCH+" gate="G$1" x="17.78" y="139.7" rot="MR90"/>
+<instance part="H-12V" gate="G$1" x="12.7" y="167.64" rot="MR270"/>
+<instance part="H-5V" gate="G$1" x="22.86" y="167.64" rot="MR270"/>
+<instance part="DEHUM_SWITCH+" gate="G$1" x="165.1" y="139.7" rot="MR90"/>
+<instance part="D-12V" gate="G$1" x="160.02" y="167.64" rot="MR270"/>
+<instance part="D-5V" gate="G$1" x="170.18" y="167.64" rot="MR270"/>
+<instance part="SUPPLY5" gate="+5V" x="22.86" y="177.8"/>
+<instance part="SUPPLY6" gate="+12V" x="12.7" y="177.8"/>
+<instance part="SUPPLY7" gate="+5V" x="170.18" y="177.8"/>
+<instance part="SUPPLY8" gate="+12V" x="160.02" y="177.8"/>
+<instance part="SUPPLY9" gate="+5V" x="25.4" y="78.74"/>
+<instance part="SUPPLY10" gate="+12V" x="15.24" y="78.74"/>
+<instance part="D5" gate="G$1" x="38.1" y="149.86" rot="R180"/>
+<instance part="D6" gate="G$1" x="185.42" y="149.86" rot="R180"/>
+<instance part="D7" gate="G$1" x="40.64" y="48.26" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -11108,20 +11114,6 @@ W = angled&lt;p&gt;
 <pinref part="R43" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="HEAT_SWITCH_GND" gate="G$1" pin="P"/>
-<wire x1="55.88" y1="137.16" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="D"/>
-<wire x1="55.88" y1="124.46" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U5" gate="A" pin="D"/>
-<wire x1="12.7" y1="124.46" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<junction x="55.88" y="137.16"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FAN_SWITCH" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="1"/>
@@ -11162,11 +11154,117 @@ W = angled&lt;p&gt;
 <pinref part="R31" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="N$22" class="0">
 <segment>
+<pinref part="FAN_SWITCH+" gate="G$1" pin="P"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="48.26" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="60.96" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<junction x="20.32" y="60.96"/>
+<wire x1="15.24" y1="60.96" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="F-12V" gate="G$1" pin="2"/>
+<pinref part="F-5V" gate="G$1" pin="2"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="38.1" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="20.32" y="48.26"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="HEAT_SWITCH+" gate="G$1" pin="P"/>
+<wire x1="17.78" y1="142.24" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="149.86" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="160.02" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="160.02" x2="22.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="160.02" x2="12.7" y2="160.02" width="0.1524" layer="91"/>
+<junction x="17.78" y="160.02"/>
+<wire x1="12.7" y1="160.02" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="H-12V" gate="G$1" pin="2"/>
+<pinref part="H-5V" gate="G$1" pin="2"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="35.56" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<junction x="17.78" y="149.86"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="DEHUM_SWITCH+" gate="G$1" pin="P"/>
+<wire x1="165.1" y1="142.24" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="149.86" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="160.02" x2="170.18" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="160.02" x2="160.02" y2="160.02" width="0.1524" layer="91"/>
+<junction x="165.1" y="160.02"/>
+<wire x1="160.02" y1="160.02" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="D-12V" gate="G$1" pin="2"/>
+<pinref part="D-5V" gate="G$1" pin="2"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="182.88" y1="149.86" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
+<junction x="165.1" y="149.86"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="H-5V" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="172.72" x2="22.86" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="D-5V" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="172.72" x2="170.18" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="F-5V" gate="G$1" pin="1"/>
+<pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
+<wire x1="25.4" y1="73.66" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="H-12V" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="172.72" x2="12.7" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="D-12V" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="172.72" x2="160.02" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="F-12V" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="73.66" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+</segment>
+</net>
+<net name="+12V1" class="0">
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="40.64" y1="149.86" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="HEAT_SWITCH_GND" gate="G$1" pin="P"/>
+<wire x1="55.88" y1="137.16" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U4" gate="A" pin="D"/>
+<wire x1="55.88" y1="149.86" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="124.46" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U5" gate="A" pin="D"/>
+<wire x1="12.7" y1="124.46" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
+<junction x="55.88" y="137.16"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
+<junction x="55.88" y="149.86"/>
+</segment>
+</net>
+<net name="+12V2" class="0">
+<segment>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="187.96" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="DEHUM_SWITCH_GND" gate="G$1" pin="P"/>
-<wire x1="203.2" y1="137.16" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="137.16" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U11" gate="A" pin="D"/>
+<wire x1="203.2" y1="149.86" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="124.46" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U12" gate="A" pin="D"/>
 <wire x1="160.02" y1="124.46" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
@@ -11174,90 +11272,22 @@ W = angled&lt;p&gt;
 <junction x="203.2" y="137.16"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="137.16" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
+<junction x="203.2" y="149.86"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="+12V3" class="0">
 <segment>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="43.18" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="FAN_SWITCH_GND" gate="G$1" pin="P"/>
-<wire x1="58.42" y1="38.1" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="38.1" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U6" gate="A" pin="D"/>
+<wire x1="58.42" y1="48.26" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="17.78" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
 <junction x="58.42" y="38.1"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="38.1" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="FAN_SWITCH+" gate="G$1" pin="P"/>
-<wire x1="40.64" y1="30.48" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="48.26" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
-<junction x="40.64" y="48.26"/>
-<wire x1="35.56" y1="48.26" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="F-12V" gate="G$1" pin="2"/>
-<pinref part="F-5V" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="HEAT_SWITCH+" gate="G$1" pin="P"/>
-<wire x1="40.64" y1="142.24" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="160.02" x2="45.72" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="160.02" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
-<junction x="40.64" y="160.02"/>
-<wire x1="35.56" y1="160.02" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="H-12V" gate="G$1" pin="2"/>
-<pinref part="H-5V" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="DEHUM_SWITCH+" gate="G$1" pin="P"/>
-<wire x1="187.96" y1="142.24" x2="187.96" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="160.02" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="160.02" x2="182.88" y2="160.02" width="0.1524" layer="91"/>
-<junction x="187.96" y="160.02"/>
-<wire x1="182.88" y1="160.02" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="D-12V" gate="G$1" pin="2"/>
-<pinref part="D-5V" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="H-5V" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="172.72" x2="45.72" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="+5V" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="D-5V" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="172.72" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="F-5V" gate="G$1" pin="1"/>
-<pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
-<wire x1="45.72" y1="60.96" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+12V" class="0">
-<segment>
-<pinref part="H-12V" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="172.72" x2="35.56" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="+12V" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="D-12V" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="172.72" x2="182.88" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY8" gate="+12V" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="F-12V" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="60.96" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+<junction x="58.42" y="48.26"/>
 </segment>
 </net>
 </nets>
