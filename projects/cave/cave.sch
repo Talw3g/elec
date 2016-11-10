@@ -11239,7 +11239,7 @@ W = angled&lt;p&gt;
 <pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
 </segment>
 </net>
-<net name="+12V1" class="0">
+<net name="HEAT_GND" class="0">
 <segment>
 <pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="149.86" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
@@ -11257,7 +11257,7 @@ W = angled&lt;p&gt;
 <junction x="55.88" y="149.86"/>
 </segment>
 </net>
-<net name="+12V2" class="0">
+<net name="DEHUM_GND" class="0">
 <segment>
 <pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="187.96" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
@@ -11275,7 +11275,7 @@ W = angled&lt;p&gt;
 <junction x="203.2" y="149.86"/>
 </segment>
 </net>
-<net name="+12V3" class="0">
+<net name="FAN_GND" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="A"/>
 <wire x1="43.18" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
