@@ -22925,7 +22925,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="LIGHTSEN_5V" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
+<part name="LIGHTSEN_3V3" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="LIGHTSEN_SIG" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2369LT1"/>
@@ -23042,14 +23042,16 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="C13" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="4.7F/2.5V"/>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="4.7F/2.5V"/>
 <part name="C15" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="4.7F/2.5V"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF/25V"/>
-<part name="R12" library="rcl" deviceset="POTENTIOMETER_" device="PT_SPIN" value="5k"/>
+<part name="R12" library="rcl" deviceset="POTENTIOMETER_" device="PT_SPIN" value="10k"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="U8" library="transistor-power" deviceset="IRLML6344TRPBF" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="+5V" device=""/>
+<part name="T4" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2369LT1"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF/25V"/>
 </parts>
 <sheets>
 <sheet>
@@ -24440,9 +24442,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="R15" gate="G$1" x="111.76" y="48.26"/>
 <instance part="R16" gate="G$1" x="86.36" y="33.02" rot="MR270"/>
 <instance part="GND7" gate="1" x="93.98" y="22.86" rot="MR0"/>
-<instance part="LIGHTSEN_5V" gate="G$1" x="208.28" y="142.24" rot="R180"/>
-<instance part="LIGHTSEN_SIG" gate="G$1" x="208.28" y="129.54" rot="R180"/>
-<instance part="GND8" gate="1" x="177.8" y="114.3"/>
+<instance part="LIGHTSEN_3V3" gate="G$1" x="208.28" y="142.24" rot="R180"/>
+<instance part="LIGHTSEN_SIG" gate="G$1" x="208.28" y="127" rot="R180"/>
+<instance part="GND8" gate="1" x="175.26" y="111.76"/>
 <instance part="+3V1" gate="G$1" x="-15.24" y="147.32"/>
 <instance part="+3V2" gate="G$1" x="78.74" y="147.32"/>
 <instance part="SUPPLY11" gate="+5V" x="114.3" y="68.58"/>
@@ -24450,9 +24452,11 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="R5" gate="G$1" x="5.08" y="50.8" rot="MR90"/>
 <instance part="C4" gate="G$1" x="5.08" y="35.56" rot="MR0"/>
 <instance part="GND6" gate="1" x="5.08" y="25.4" rot="MR0"/>
-<instance part="C16" gate="G$1" x="175.26" y="124.46" rot="MR0"/>
-<instance part="R12" gate="1" x="182.88" y="124.46" rot="R90"/>
-<instance part="+3V4" gate="G$1" x="172.72" y="147.32"/>
+<instance part="R12" gate="1" x="165.1" y="142.24" rot="R90"/>
+<instance part="+3V4" gate="G$1" x="180.34" y="147.32"/>
+<instance part="T4" gate="G$1" x="167.64" y="127" rot="MR0"/>
+<instance part="R14" gate="G$1" x="177.8" y="127" rot="MR180"/>
+<instance part="C17" gate="G$1" x="190.5" y="121.92" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -24490,14 +24494,14 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="2"/>
+<pinref part="T4" gate="G$1" pin="E"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="175.26" y1="119.38" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R12" gate="1" pin="3"/>
-<wire x1="177.8" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="116.84" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
-<junction x="177.8" y="116.84"/>
+<wire x1="165.1" y1="121.92" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="114.3" x2="190.5" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="114.3" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
+<junction x="175.26" y="114.3"/>
 </segment>
 </net>
 <net name="DHT22_EXT" class="0">
@@ -24537,10 +24541,13 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="LIGHTSEN_5V" gate="G$1" pin="P"/>
-<wire x1="205.74" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="142.24" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R12" gate="1" pin="3"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="170.18" y1="142.24" x2="180.34" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="142.24" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="LIGHTSEN_3V3" gate="G$1" pin="P"/>
+<wire x1="180.34" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<junction x="180.34" y="142.24"/>
 </segment>
 </net>
 <net name="DHT22_INT" class="0">
@@ -24617,18 +24624,33 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <label x="10.16" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="T4" gate="G$1" pin="B"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="127" x2="190.5" y2="127" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="127" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="LIGHTSEN_SIG" gate="G$1" pin="P"/>
+<wire x1="190.5" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
+<junction x="190.5" y="127"/>
+</segment>
+</net>
 <net name="LIGHT_SENSOR" class="0">
 <segment>
-<wire x1="170.18" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="127" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
-<junction x="175.26" y="129.54"/>
-<pinref part="R12" gate="1" pin="2"/>
-<pinref part="LIGHTSEN_SIG" gate="G$1" pin="P"/>
-<wire x1="182.88" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
-<junction x="182.88" y="129.54"/>
-<label x="170.18" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="T4" gate="G$1" pin="C"/>
+<pinref part="R12" gate="1" pin="1"/>
+<wire x1="165.1" y1="137.16" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="134.62" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<junction x="165.1" y="134.62"/>
+<label x="160.02" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
