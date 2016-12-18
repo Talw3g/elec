@@ -23052,6 +23052,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="T4" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2369LT1"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF/25V"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -24457,6 +24458,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="T4" gate="G$1" x="167.64" y="127" rot="MR0"/>
 <instance part="R14" gate="G$1" x="177.8" y="127" rot="MR180"/>
 <instance part="C17" gate="G$1" x="190.5" y="121.92" rot="MR0"/>
+<instance part="R22" gate="G$1" x="15.24" y="35.56" rot="MR270"/>
 </instances>
 <busses>
 </busses>
@@ -24492,6 +24494,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="27.94" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="30.48" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
+<junction x="5.08" y="27.94"/>
 </segment>
 <segment>
 <pinref part="T4" gate="G$1" pin="E"/>
@@ -24619,9 +24625,13 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="45.72" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="43.18" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
 <junction x="5.08" y="43.18"/>
-<label x="10.16" y="43.18" size="1.27" layer="95" xref="yes"/>
+<label x="22.86" y="43.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="40.64" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
+<junction x="15.24" y="43.18"/>
 </segment>
 </net>
 <net name="N$20" class="0">
